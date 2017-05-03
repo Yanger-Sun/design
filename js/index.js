@@ -221,29 +221,29 @@ function drawvideo(){
     })
 }
 
-var videonowIndex;
-$(".video_list").on("touchstart","li",function(e){
-	videonowIndex = $(this).index();
-	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html(video[videonowIndex].src);
-})
-$(".video .tab_up").on("touchstart",function(){
-	videonowIndex-=1;
-	if(videonowIndex < 0){
-    	videonowIndex = $(".video_list").find("li").length - 1;
-	}
-	console.log(video[videonowIndex].name)
-	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html(video[videonowIndex].src);
-})
-$(".video .tab_down").on("touchstart",function(){
-	ypnowIndex+=1;
-	if(videonowIndex == $(".video_list").find("li").length){
-    	videonowIndex = 0;
-	}
-	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html(video[videonowIndex].src);
-})
+//var videonowIndex;
+//$(".video_list").on("touchstart","li",function(e){
+//	videonowIndex = $(this).index();
+//	 $(".video_title").html(video[videonowIndex].name);
+//	$("video_process").html(video[videonowIndex].src);
+//})
+//$(".video .tab_up").on("touchstart",function(){
+//	videonowIndex-=1;
+//	if(videonowIndex < 0){
+//    	videonowIndex = $(".video_list").find("li").length - 1;
+//	}
+//	console.log(video[videonowIndex].name)
+//	 $(".video_title").html(video[videonowIndex].name);
+//	$("video_process").html(video[videonowIndex].src);
+//})
+//$(".video .tab_down").on("touchstart",function(){
+//	ypnowIndex+=1;
+//	if(videonowIndex == $(".video_list").find("li").length){
+//    	videonowIndex = 0;
+//	}
+//	 $(".video_title").html(video[videonowIndex].name);
+//	$("video_process").html(video[videonowIndex].src);
+//})
 
 
 $(".game_five").on("touchstart",function(){
