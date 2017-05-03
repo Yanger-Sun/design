@@ -1,4 +1,4 @@
-function Player(t) {
+ï»¿function Player(t) {
     this.color = t
 }
 function HumanPlayer(t, e) {
@@ -235,9 +235,9 @@ function showWinDialog(t) {
         } (t.getCurrentPlayer().color);
         $("#game-won h4").html(e + " Won!"),
         gameInfo.value = e + " won.",
-        $("#win-content").html(e + " Ó®µÃÁË±ÈÈü. ÔÙÍæÒ»´Î?"),
+        $("#win-content").html(e + " èµ¢å¾—äº†æ¯”èµ›. å†ç©ä¸€æ¬¡?"),
         $("#happy-outer").fadeIn(500)
-    } else t.getCurrentPlayer() instanceof HumanPlayer ? ($("#game-won h4").html("You Won!"), $("#win-content").html("ÄãÓ®À². ÔÙÍæÒ»´Î?"), gameInfo.value = "You won.", $("#sad-outer").fadeIn(500)) : ($("#game-won h4").html("You Lost."), $("#win-content").html("°¢Å¼. ÄãÊäÁË. Òª²»ÒªÔÙÍæÒ»´Î?"), gameInfo.value = "Computer won.", $("#happy-outer").fadeIn(500))
+    } else t.getCurrentPlayer() instanceof HumanPlayer ? ($("#game-won h4").html("You Won!"), $("#win-content").html("ä½ èµ¢å•¦. å†ç©ä¸€æ¬¡?"), gameInfo.value = "You won.", $("#sad-outer").fadeIn(500)) : ($("#game-won h4").html("You Lost."), $("#win-content").html("é˜¿å¶. ä½ è¾“äº†. è¦ä¸è¦å†ç©ä¸€æ¬¡?"), gameInfo.value = "Computer won.", $("#happy-outer").fadeIn(500))
 }
 Player.prototype.myTurn = function() {
     this.game.setCurrentColor(this.color),
