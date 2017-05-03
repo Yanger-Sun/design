@@ -186,7 +186,7 @@ function adjustSizeGen() {
             "padding-bottom": 50 + c,
             "margin-top": -(15 * c + 82)
         }), n.css("padding", c), o.css({
-            top: 100,
+            top: 180,
             bottom: 50,
             left: 6,
             right: 6
