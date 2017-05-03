@@ -225,7 +225,7 @@ var videonowIndex;
 $(".video_list").on("touchstart","li",function(e){
 	videonowIndex = $(this).index();
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html("src",video[videonowIndex].src);
+	$("video_process").html(video[videonowIndex].src);
 })
 $(".video .tab_up").on("touchstart",function(){
 	videonowIndex-=1;
@@ -234,7 +234,7 @@ $(".video .tab_up").on("touchstart",function(){
 	}
 	console.log(video[videonowIndex].name)
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html("src",video[videonowIndex].src);
+	$("video_process").html(video[videonowIndex].src);
 })
 $(".video .tab_down").on("touchstart",function(){
 	ypnowIndex+=1;
@@ -242,7 +242,7 @@ $(".video .tab_down").on("touchstart",function(){
     	videonowIndex = 0;
 	}
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process").html("src",video[videonowIndex].src);
+	$("video_process").html(video[videonowIndex].src);
 })
 
 
