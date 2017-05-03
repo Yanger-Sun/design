@@ -191,23 +191,23 @@ $(".yinpin .tab_down").on("touchstart",function(){
 var video = [
 	{
 		name:"发现新世界",
-		src:"http://player.video.qiyi.com/8eed044a5d7856668bf96bd0bad9db76/0/810/v_19rravyqyk.swf-albumId=206527601-tvId=657683600-isPurchase=0-cnId=4"	
+		src:"<embed src='http://player.video.qiyi.com/8eed044a5d7856668bf96bd0bad9db76/0/810/v_19rravyqyk.swf-albumId=206527601-tvId=657683600-isPurchase=0-cnId=4' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"	
 	},
 	{
 		name:"幼儿园的一天",
-		src:"http://player.video.qiyi.com/2e7e272379d2037b4a4f4ba9df0557ee/0/810/v_19rravzbc4.swf-albumId=206527601-tvId=657661000-isPurchase=0-cnId=4"	
+		src:"<embed src='http://player.video.qiyi.com/2e7e272379d2037b4a4f4ba9df0557ee/0/810/v_19rravzbc4.swf-albumId=206527601-tvId=657661000-isPurchase=0-cnId=4' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"	
 	},
 	{
 		name:"虫儿飞飞",
-		src:"http://player.video.qiyi.com/1f89d43b1487b29d4e77f276f3dab7f1/0/810/v_19rravzvys.swf-albumId=206527601-tvId=657687800-isPurchase=0-cnId=4"	
+		src:"<embed src='http://player.video.qiyi.com/1f89d43b1487b29d4e77f276f3dab7f1/0/810/v_19rravzvys.swf-albumId=206527601-tvId=657687800-isPurchase=0-cnId=4' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"	
 	},
 	{
 		name:"去野营",
-		src:"http://player.video.qiyi.com/0a23e11bc5f399c1e3e5bdd4304aabf3/0/810/v_19rravzwwc.swf-albumId=206527601-tvId=657690400-isPurchase=0-cnId=4"	
+		src:"<embed src='http://player.video.qiyi.com/0a23e11bc5f399c1e3e5bdd4304aabf3/0/810/v_19rravzwwc.swf-albumId=206527601-tvId=657690400-isPurchase=0-cnId=4' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>"	
 	},
 	{
 		name:"门外的陌生人",
-		src:"http://player.video.qiyi.com/a768ed9b39dbca672c29d0236c53b38f/0/810/v_19rravdb5g.swf-albumId=206527601-tvId=658749400-isPurchase=0-cnId=4"	
+		src:"<embed src='http://player.video.qiyi.com/a768ed9b39dbca672c29d0236c53b38f/0/810/v_19rravdb5g.swf-albumId=206527601-tvId=658749400-isPurchase=0-cnId=4' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>		"	
 	}
 ]
 function drawvideo(){
@@ -225,8 +225,7 @@ var videonowIndex;
 $(".video_list").on("touchstart","li",function(e){
 	videonowIndex = $(this).index();
 	 $(".video_title").html(video[videonowIndex].name);
-	$(".video_process embed").attr("src",video[videonowIndex].src);
-	$(".video_process embed").get(0).play(); 
+	$("video_process").html("src",video[videonowIndex].src);
 })
 $(".video .tab_up").on("touchstart",function(){
 	videonowIndex-=1;
@@ -235,8 +234,7 @@ $(".video .tab_up").on("touchstart",function(){
 	}
 	console.log(video[videonowIndex].name)
 	 $(".video_title").html(video[videonowIndex].name);
-	$(".video_process embed").attr("src",video[videonowIndex].src);
-	$(".video_process embed").get(0).play(); 
+	$("video_process").html("src",video[videonowIndex].src);
 })
 $(".video .tab_down").on("touchstart",function(){
 	ypnowIndex+=1;
@@ -244,8 +242,7 @@ $(".video .tab_down").on("touchstart",function(){
     	videonowIndex = 0;
 	}
 	 $(".video_title").html(video[videonowIndex].name);
-	$(".video_process embed").attr("src",video[videonowIndex].src);
-	$(".video_process embed").get(0).play(); 
+	$("video_process").html("src",video[videonowIndex].src);
 })
 
 
