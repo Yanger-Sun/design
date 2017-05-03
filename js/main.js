@@ -186,12 +186,12 @@ function adjustSizeGen() {
             "padding-bottom": 50 + c,
             "margin-top": -(15 * c + 82)
         }), n.css("padding", c), o.css({
-            top: 135,
+            top: 180,
             bottom: 50,
             left: 6,
             right: 6
         }), a.css("line-height", "80px"), i.css({
-            top: -20,
+            top: 20,
             width: (15 * (2 * c + 1) + 12) / 2 - 150
         }), r.css({
             top: 6,
