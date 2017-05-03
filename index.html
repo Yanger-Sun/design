@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>幼儿成长乐</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="css3">
+    <link rel="apple-touch-icon" href="images/book_bj.jpg">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="宝宝成长">
+    <link rel="icon" sizes="192x192" href="images/yp_bj.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/jquery.js"></script></head>
+<body>
+    <!-- 顶部固定栏Start -->
+    <div class="top_fixed">
+        <ul>
+            <li class="top_side top_back">
+                <span class="top_close top_font top-fanhui"></span>
+            </li>
+            <li class="top_middle">
+                幼儿乐园
+            </li>
+            <li class="top_side">
+                <span class="top_font top-shezhi"></span>
+            </li>
+        </ul>
+    </div>
+    <!-- 顶部固定栏 End-->
+
+    <!-- 菜单栏Start -->
+    <div class="load">
+        <ul class="select_btns">
+            <li class="select_btn story_block">
+                <a href="javascript:;">幼儿故事</a>
+            </li>
+            <li class="select_btn game_block">
+                <a href="javascript:;">幼儿游戏</a>
+            </li>
+            <li class="select_btn study_block">
+                <a href="javascript:;">幼儿学习</a>
+            </li>
+            <li class="select_btn grow_block">
+                <a href="javascript:;">成长记录</a>
+            </li>
+            <li class="select_btn about_us">
+                <a href="javascript:;">关于我们</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 菜单栏End-->
+    <!-- 侧边栏Start -->
+    <div class="side_fixed">
+        <ul class="side_contact">
+            <li class="side_logo">
+                <div>
+
+                </div>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+    <!-- 侧边栏 End-->
+    <!-- 故事栏Start -->
+    <div class="story menu_block">
+        <div class="story_contains">
+            <div class="story_yp">
+                <div class="yp_img"></div>
+                <div class="story_type">音频故事</div>
+            </div>
+            <div class="story_sp">
+                <div class="sp_img"></div>
+                <div class="story_type">视频故事</div>
+            </div>
+        </div>
+    </div>
+    <!-- 故事栏End-->
+    <div class="yinpin">
+        <div class="yp_title">小红帽</div>
+        <div class="yp_process">
+            <audio src="yinpin/儿童读物-三个和尚.mp3" controls></audio>
+            <div class="tab_btn"><span class="tab_up">上一曲</span><span class="tab_down">下一曲</span></div>
+        </div>
+        <ul class="yp_list"></ul>
+    </div>
+    <div class="video">
+        <div class="video_title"></div>
+        <div class="video_process">
+<!--            <video src="http://player.video.qiyi.com/8eed044a5d7856668bf96bd0bad9db76/0/810/v_19rravyqyk.swf-albumId=206527601-tvId=657683600-isPurchase=0-cnId=4"></video>
+-->        	
+<embed src="http://player.video.qiyi.com/2e7e272379d2037b4a4f4ba9df0557ee/0/810/v_19rravzbc4.swf-albumId=206527601-tvId=657661000-isPurchase=0-cnId=4" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        </div>
+        <div class="video_list"></div>
+    </div>
+    <!-- 游戏栏Start -->
+    <div class="game menu_block">
+        <ul>
+            <li class="game_five">2048</li>
+            <li class="game_draw">画画</li>
+            <li class="game_2048">五子棋</li>
+        </ul>
+    </div>
+    <!-- 游戏栏End-->
+    <!-- 游戏2048开始 -->
+    <div class="five_row">
+        <script src="js/hammer.min.js"></script>
+        <script src="js/twofour.js"></script>
+
+        <div id="mobilewrap">
+            <div id="container">
+                <div class="score">
+                    <p> <span class="title">Score</span><span class="scorefield">0</span></p>
+                </div>
+                <div class="newgame">
+                    <div class="button"><span>New Game</span></div>
+                </div>
+                <div class="grid">
+                    <div class="row">
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div class="row">
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div class="row">
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                    </div>
+                    <div class="row">
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                        <div class="base"></div>
+                    </div>
+                </div>
+                <div class="tiles"></div>
+                <div class="over"><span>Game Over</span></div>
+                <div class="won"><span class="winner">You win!</span><span class="bestscore">BEST SCORE: </span><span class="numbest"> </span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 游戏2048结束 -->
+    <!-- 画图开始 -->
+    <div class="draw">
+        <canvas id="canvas"></canvas>
+        <div class="drawBtn">
+        	<div class="colorBtn">
+            	<input type="color" />
+            </div>
+        	<div class="clearBtn">清除画布
+            </div>
+        	<div class="colorBtn">
+            </div>
+        </div>
+    </div>
+    <!-- 画图结束 -->
+    <!-- 五子棋开始 -->
+    <div class="five">
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+    <!-- 五子棋结束 -->
+    <!-- 学习栏Start -->
+    <div class="study menu_block">
+		<ul>
+        	<li class="sanzijing"></li>
+            <li class="baijiaxing"></li>
+        	<li class="gushici"></li>
+            <li class="dizigui"></li>
+        </ul>
+    </div>
+    <!-- 学习栏End-->
+    <!-- 三字经 -->
+    <div class="szj">
+    	<div class="study_title">三字经</div>
+        <div class="study_process">
+            <audio src="yinpin/儿童读物-三个和尚.mp3" controls></audio>
+            <div class="tab_btn"><span class="tab_up">上一曲</span><span class="tab_down">下一曲</span></div>
+        </div>
+        <ul class="study_list"></ul>
+    </div>
+    <!-- 成长栏Start -->
+    <div class="grow menu_block">
+    	<ul>
+        </ul>    
+    </div>
+    <!-- 成长栏End-->
+    <!-- 关于我们栏Start -->
+    <div class="aboutUs menu_block">
+    <figure>
+            <div class="dot white">
+            </div>
+            <div class="dot">
+            </div>
+            <div class="dot">
+            </div>
+            <div class="dot">
+            </div>
+            <div class="dot">
+            </div>
+        </figure>
+        <div class="about_contains">
+            <ul>
+                <li></li>
+                <li></li>
+                <li class="about_title">幼儿乐园</li>
+                <li>学前教育是教育的组成部分</li>
+                <li>人类社会诞生之日</li>
+                <li>就是学前教育产生之时</li>
+                <li class="now">学前教育是教育活动的最初阶段</li>
+                <li>是人生第一个教育阶段</li>
+                <li></li>
+                <li></li>
+                <li class="about_title">作者</li>
+                <li>孙晋辰</li>
+                <li>计算机科学与技术系</li>
+                <li>数字媒体专业</li>
+                <li>2013100619</li>
+                <li>个人站</li>
+                <li><a href="http://yanger-sun.github.io">http://yanger-sun.github.io</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 关于我们栏End-->
+
+</body>
+<script>
+    $(window).on("resize",function(){
+        var clientH = $(window).outerHeight();
+        var aboutliH = $(".about_contains ul li").outerHeight(true);
+        var selectH = $(".select_btn").outerHeight(true);
+        var top_sideH = $(".top_fixed").outerHeight(true);
+        $(".side_fixed").height(clientH - top_sideH);
+        $("body").height(clientH);
+        $(".side_logo div").height($(".side_fixed .side_contact .side_logo div").width());
+        $(".select_btns").height(selectH * $(".select_btn").length);
+    })
+    $(window).trigger("resize");
+    $(".select_btn").find("a").on("touchstart",function(){
+        $(".top_middle").html($(this).html());
+        $(".load").addClass("hide");
+        if($(this).closest("li").hasClass("about_us")){
+            $(".aboutUs").addClass("show");
+            t = setInterval(f,1000);
+        }
+        if($(this).closest("li").hasClass("game_block")){
+            $(".game").addClass("show");
+        }
+        if($(this).closest("li").hasClass("story_block")){
+            $(".story").addClass("show");
+        }
+        if($(this).closest("li").hasClass("grow_block")){
+            $(".grow").addClass("show");
+			makePhoto();
+        }
+        if($(this).closest("li").hasClass("study_block")){
+            $(".study").addClass("show");
+        }
+    });
+    var aboutTCount = 0;
+    var fixedShow = false;
+    $(".top-shezhi").on("touchstart",function(){
+        $(".side_fixed").addClass("show");
+        fixedShow = true;
+    });
+    $(".top_close").on("touchstart",function(){
+        clearInterval(t); //清除滚动时间
+        for(var i=0;i<aboutTCount;i++){
+            aboutLi.find("li").eq(aboutLi.find("li").length - 1).prependTo(aboutLi)
+        }
+        aboutTCount = 0;
+        if(fixedShow){
+            fixedShow = false;
+            $(".side_fixed").removeClass("show");
+        }else if($(".yinpin").attr("display")=="show" || $(".video").attr("display")=="show"){
+            $(".yinpin").attr("display","hide");
+            $(".video").attr("display","hide");
+			$(".yinpin").find("audio").attr("src","");
+            $(".story.menu_block").addClass("show");
+			$(".story_contains").show();
+			 $(".yinpin").hide();
+			 $(".video").hide();
+            return;
+        }else if($(".szj").attr("display")=="show"){
+            $(".szj").attr("display","hide");
+			$(".szj").find("audio").attr("src","");
+			$(".study.menu_block").addClass("show");
+       		 $(".szj").hide();
+            return;
+        }else if(!fixedShow){
+            if($(".load").hasClass("hide") || $(".menu_block").hasClass("show")){
+            $(".load").removeClass("hide");
+            $(".five_row").hide();
+            $(".yinpin").hide();
+            $(".video").hide();
+            $(".draw").hide();
+            $(".five").hide();
+            $(".story.menu_block").removeClass("show");
+			$(".yinpin").find("audio").attr("src","");
+            $(".five iframe").attr("src","");
+            $(".button").trigger("click");
+            $(".menu_block").removeClass("show");
+            $(".top_middle").html("幼儿乐园");
+            }
+        }
+    });
+</script>
+<script type="text/javascript" src="js/index.js" charset="gbk" ></script>
+</html>
