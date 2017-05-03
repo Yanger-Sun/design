@@ -1,0 +1,16 @@
+@mixin userlist($userscreen){
+  $screen-size:100vw,1024px,800px,768px,640px,600px,414px,412px,393px,384px,375px,360px,340px,320px;
+  @each $size in $screen-size{
+    @media screen  and (max-width:#{$size}){
+      html{
+        font-size: 100px * ($size/$userscreen);
+      }
+    }
+  }
+}
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-decoration: none;
+}
