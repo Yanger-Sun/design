@@ -186,14 +186,10 @@
      </header> 
      <div id="game-info" class="game-ult ui-bar ui-bar-e"> 
       <span class="go black"></span> 
-      <span class="cont">Your turn.</span> 
      </div> 
      <div id="main-but-group" class="game-ult"> 
-      <a href="#new-game" data-rel="dialog" data-role="button" data-icon="grid">New Game</a> 
-      <a href="#" id="undo-button" data-icon="back" data-role="button">Undo</a> 
-     </div> 
-     <div id="other-but-group" class="game-ult"> 
-      <a href="#help-page" id="help-button" data-icon="star" data-role="button">About</a> 
+      <a href="#new-game" data-rel="dialog" data-role="button" data-icon="grid">新游戏</a> 
+      <a href="#" id="undo-button" data-icon="back" data-role="button">撤销上一步</a> 
      </div> 
      <div class="go-board" data-enhance="false"> 
      </div> 
@@ -206,56 +202,56 @@
   </div> 
   <div id="game-won" data-theme="e" data-role="dialog"> 
    <div data-role="header"> 
-    <h4>You Win!</h4> 
+    <h4>你赢啦</h4> 
    </div> 
    <div data-role="content"> 
     <div id="win-content">
-      You have won the game! Play again? 
+      你赢了这个比赛，要不要再来一次? 
     </div> 
     <fieldset class="ui-grid-a"> 
      <div class="ui-block-a">
-      <button type="submit" class="back-to-game" data-theme="c">Back</button>
+      <button type="submit" class="back-to-game" data-theme="c">返回</button>
      </div> 
      <div class="ui-block-b"> 
-      <a href="#new-game" data-rel="dialog" data-role="button" data-icon="grid"> Start A New Game </a> 
+      <a href="#new-game" data-rel="dialog" data-role="button" data-icon="grid">开始一个新游戏 </a> 
      </div> 
     </fieldset> 
    </div> 
   </div> 
   <div id="new-game" data-theme="e" data-role="dialog" class="long-dialog"> 
    <div data-role="header"> 
-    <h4>New Game</h4> 
+    <h4>新游戏</h4> 
    </div> 
    <div data-role="content"> 
     <fieldset data-role="controlgroup" data-theme="e" id="mode-select"> 
-     <legend>Play with</legend> 
+     <legend>对方玩家</legend> 
      <input type="radio" name="radio-choice-1" id="radio-choice-1" value="vshuman" /> 
-     <label for="radio-choice-1">Human</label> 
+     <label for="radio-choice-1">人</label> 
      <input type="radio" name="radio-choice-1" id="radio-choice-2" value="vscomputer" /> 
-     <label for="radio-choice-2">Computer</label> 
+     <label for="radio-choice-2">电脑</label> 
     </fieldset> 
     <fieldset data-role="controlgroup" data-theme="e" id="color-select" class="vs-computer"> 
      <legend>Your Color</legend> 
      <input type="radio" name="radio-choice-1" id="radio-choice-2" value="black" data-theme="a" /> 
-     <label for="radio-choice-2">Black</label> 
+     <label for="radio-choice-2">黑棋</label> 
      <input type="radio" name="radio-choice-1" id="radio-choice-1" value="white" data-theme="c" /> 
-     <label for="radio-choice-1">White</label> 
+     <label for="radio-choice-1">白棋</label> 
     </fieldset> 
     <fieldset data-role="controlgroup" data-theme="e" id="level-select" class="vs-computer"> 
-     <legend>Level Of Difficulty</legend> 
+     <legend>游戏难易度</legend> 
      <input type="radio" name="radio-choice-1" id="radio-choice-1" value="novice" /> 
-     <label for="radio-choice-1">Novice</label> 
+     <label for="radio-choice-1">容易</label> 
      <input type="radio" name="radio-choice-1" id="radio-choice-2" value="medium" /> 
-     <label for="radio-choice-2">Medium</label> 
+     <label for="radio-choice-2">中等</label> 
      <input type="radio" name="radio-choice-1" id="radio-choice-3" value="expert" /> 
-     <label for="radio-choice-3">Expert</label> 
+     <label for="radio-choice-3">困难</label> 
     </fieldset> 
     <fieldset class="ui-grid-a"> 
      <div class="ui-block-a">
-      <button type="submit" class="back-to-game" data-theme="c">Back</button>
+      <button type="submit" class="back-to-game" data-theme="c">返回</button>
      </div> 
      <div class="ui-block-b">
-      <button type="submit" id="start-game" data-theme="b">Start</button>
+      <button type="submit" id="start-game" data-theme="b">确认</button>
      </div> 
     </fieldset> 
    </div> 
