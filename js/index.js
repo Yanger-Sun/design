@@ -191,7 +191,7 @@ $(".yinpin .tab_down").on("touchstart",function(){
 var video = [
 	{
 		name:"发现新世界",
-		src:"http://player.video.qiyi.com/8eed044a5d7856668bf96bd0bad9db76/0/810/v_19rravyqyk.swf-albumId=206527601-tvId=657683600-isPurchase=0-cnId=4"	
+		src:"http://www.iqiyi.com/common/flashplayer/20170427/11261a7ff0f5.swf?vid=8eed044a5d7856668bf96bd0bad9db76&pageURL=v_19rravyqyk.swf&albumId=206527601&tvId=657683600&isPurchase=0&cnId=4&share_sTime=0&share_eTime=810&source=&purl="	
 	},
 	{
 		name:"幼儿园的一天",
@@ -214,7 +214,7 @@ function drawvideo(){
     $(video).each(function(i,v){
         if(i==0){
             $(".video_title").html(v.name);
-			$(".video_process audio").attr("src",v.src);
+			$(".video_process iframe").attr("src",v.src);
         }
         $("<li>").appendTo($(".video_list"));
         $(".video_list").find("li").eq(i).html(v.name)
@@ -225,7 +225,7 @@ var videonowIndex;
 $(".video_list").on("touchstart","li",function(e){
 	videonowIndex = $(this).index();
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process iframe").attr("src",video[videonowIndex].src);
+	$(".video_process iframe").attr("src",video[videonowIndex].src);
 })
 $(".video .tab_up").on("touchstart",function(){
 	videonowIndex-=1;
@@ -234,7 +234,7 @@ $(".video .tab_up").on("touchstart",function(){
 	}
 	console.log(video[videonowIndex].name)
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process iframe").attr("src",video[videonowIndex].src);
+	$(".video_process iframe").attr("src",video[videonowIndex].src);
 })
 $(".video .tab_down").on("touchstart",function(){
 	ypnowIndex+=1;
@@ -242,7 +242,7 @@ $(".video .tab_down").on("touchstart",function(){
     	videonowIndex = 0;
 	}
 	 $(".video_title").html(video[videonowIndex].name);
-	$("video_process iframe").attr("src",video[videonowIndex].src);
+	$(".video_process iframe").attr("src",video[videonowIndex].src);
 })
 
 
