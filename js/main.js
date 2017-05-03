@@ -37,7 +37,7 @@ function Place(t, e, n) {
     var o = this.elm = document.createElement("div");
     o.className = "go-place";
     var a = o.style;
-    a.top = 180 * (t / 15) + "%",
+    a.top = 100 * (t / 15) + "%",
     a.left = 100 * (e / 15) + "%",
     a.right = 100 - 100 * ((e + 1) / 15) + "%",
     a.bottom = 100 - 100 * ((t + 1) / 15) + "%",
