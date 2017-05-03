@@ -804,7 +804,7 @@ var ctxt = canvas.getContext('2d');
 var screenW = $(window).width();
 var screenH = $(window).height();
 $("#canvas").attr("width",screenW * 0.9);
-$("#canvas").attr("height",screenH * 0.8);
+$("#canvas").attr("height",screenH * 0.6);
 $("#canvas").css("marginTop",screenH * 0.1);
 $("#canvas").css("marginLeft",screenW * 0.05);
 var prevX=0,prevY=0,nextX,nextY;
